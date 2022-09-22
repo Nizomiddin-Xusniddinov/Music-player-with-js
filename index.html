@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - music player widget</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+  <div class="player">
+
+    <div class="player__header">
+
+      <div class="player__img player__img--absolute slider">
+
+        <button class="player__button player__button--absolute--nw playlist">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+
+        </button>
+
+        <button class="player__button player__button--absolute--center play">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+
+        </button>
+
+        <div class="slider__content">
+
+          <img class="img slider__img" src="./img/arash.jpg" alt="cover">
+          <img class="img slider__img" src="./img/elman.jpg" alt="cover">
+          <img class="img slider__img" src="http://physical-authority.surge.sh/imgs/3.jpg" alt="cover">
+          <img class="img slider__img" src="./img/fairytale.jpg" alt="cover">
+          <img class="img slider__img" src="./img/in my mind.jpg" alt="cover">
+          <img class="img slider__img" src="./img/thank you.jpg" alt="cover">
+          <img class="img slider__img" src="./img/riad_payız_gecəsi.jpg" alt="cover">
+
+        </div>
+
+      </div>
+
+      <div class="player__controls">
+
+        <button class="player__button back">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+        </button>
+        
+        <p class="player__context slider__context">
+
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+
+        </p>
+
+        <button class="player__button next">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+        </button>
+
+        <div class="progres">
+
+          <div class="progres__filled"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <ul class="player__playlist list">
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/arash.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Arash & Helena</b>
+          <span class="flex">
+
+            <span class="player__title">One day</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="./musics/83_Arash_ft-Helena.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/elman.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Лети</b>
+          <span class="flex">
+
+            <span class="player__title">Elman</span>
+            <span class="player__song-time"></span>
+
+          </span>
+          
+        </p>
+
+        <audio class="audio" src="./musics/Elman - Лети.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="http://physical-authority.surge.sh/imgs/3.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">джованна</b>
+          <span class="flex">
+
+            <span class="player__title">enrasta</span>
+            <span class="player__song-time"></span>
+
+          </span>
+            
+        </p>
+
+        <audio class="audio" src="http://physical-authority.surge.sh/music/3.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/fairytale.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Fairytale</b>
+          <span class="flex">
+
+            <span class="player__title">Aleksandr Ribak</span>
+            <span class="player__song-time"></span>
+
+          </span>
+          
+        </p>
+
+        <audio class="audio" src="./musics/Fairytale   Aleksandr Ribak.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/in my mind.jpg" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name"> Forever In My Mind</b>
+          <span class="flex">
+
+            <span class="player__title">Only you</span>
+            <span class="player__song-time"></span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="./musics/Only You   Forever In My Mind.mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/thank you.jpg" alt="cover">
+
+        <p class="player__context">
+
+          <b class="player__song-name">Thank Your</b>
+          <span class="flex">
+
+            <span class="player__title">Cover</span>
+            <span class="player__song-time"> </span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="./musics/Thank You (cover).mp3"></audio>
+
+      </li>
+
+      <li class="player__song">
+
+        <img class="player__img img" src="./img/riad_payız_gecəsi.jpg" alt="cover">
+
+        <p class="player__context ">
+
+          <b class="player__song-name">riad_payız_gecəsi 
+          <span class="flex">
+
+            <span class="player__title">Riad</span>
+            <span class="player__song-time"> </span>
+
+          </span>
+
+        </p>
+
+        <audio class="audio" src="./musics/riad_payız_gecəsi_official_audio_16.mp3"></audio>
+
+      </li>
+
+    </ul>
+
+  </div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
